@@ -1,37 +1,42 @@
 package com.company;
 
-public class Vehicle {
-    String Make;
-    String Model;
-    int Year;
+public abstract class Vehicle {
+    private int year;
+    private String make;
+    private String model;
 
-    public Vehicle(String make, String model, int year) {
-        Make = make;
-        Model = model;
-        Year = year;
-    }
 
-    public String getMake() {
-        return Make;
-    }
-
-    public void setMake(String make) {
-        Make = make;
-    }
-
-    public String getModel() {
-        return Model;
-    }
-
-    public void setModel(String model) {
-        Model = model;
+    public Vehicle() {
+        this.year = year;
+        this.make = make;
+        this.model = model;
     }
 
     public int getYear() {
-        return Year;
+        return year;
     }
 
     public void setYear(int year) {
-        Year = year;
+        this.year = year;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void getVehicleInfo(){
+        System.out.println("The current vehicle is a " + getYear() + " " + getMake() + " " + getModel());
     }
 }
