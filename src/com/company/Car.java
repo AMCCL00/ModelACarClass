@@ -16,6 +16,10 @@ public class Car extends Vehicle{
         setGas(100);
     }
 
+    public Car(String make, String model, int year, int speed, int gas) {
+        super(year,make,model);
+    }
+
 
     public void setYear() {
         System.out.println("What is the year of the car you would like to make?");

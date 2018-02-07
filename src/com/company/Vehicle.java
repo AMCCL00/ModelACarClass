@@ -5,6 +5,11 @@ public abstract class Vehicle {
     private String make;
     private String model;
 
+    public Vehicle(int year, String make, String model) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+    }
 
     public Vehicle() {
         this.year = year;
